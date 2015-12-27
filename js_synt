@@ -1,0 +1,28 @@
+javascript 函数
+
+//definition:
+function func1(){
+  alert("this is a function1");
+}
+
+// a function can be used as a class
+var obj1 = new func1();
+// or use no name function
+var obj2 = new function(){ }
+
+// add attribute and method
+obj1.attr1="attr1 value";
+obj1.method1=function(){ alert("this is in object1 method1") }
+
+// use prototype to add attr and mehtod to the class
+obj1.prototype.cattr1="class attr 1 value"
+obj1.prototype.cmehtod1= function (){};
+
+字面量对象
+
+var customObject = {}
+
+var obj = {
+  prop1: 5,
+  mehod1: function(){ /* method */}
+};
